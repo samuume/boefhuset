@@ -1,0 +1,49 @@
+<nav [ngClass]="{'page-scroll-header': isScrolled}" class="navbar navbar-toggleable-md navbar-light">
+<button (click)="change(1);" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+  <div class="navbar-brand col-md-4 d-flex align-items-center">
+    <a [routerLink]='["/home"]' routerLinkActive="active">
+      <div class="logo" [ngClass]="{'colored-logo': isScrolled || changed === 1}"></div>
+    </a>
+  </div>
+  <div class="collapse navbar-collapse .col-md-8 .offset-md-8 justify-content-end" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mt-md-0 lead">
+      <li class="nav-item active">
+        <a
+          [routerLink]='["/home"]'
+          routerLinkActive="active"
+          class="nav-link"
+          [ngClass]="{'scrolledLink': isScrolled}">Home <span class="sr-only">(current)</span> </a>
+      </li>
+      <li class="nav-item">
+        <a
+          [routerLink]='["/buffet"]'
+          routerLinkActive="active"
+          class="nav-link"
+          [ngClass]="{'scrolledLink': isScrolled}">Buffet</a>
+      </li>
+      <li class="nav-item">
+        <a
+          [routerLink]='["/vinkort"]'
+          routerLinkActive="active"
+          class="nav-link"
+          [ngClass]="{'scrolledLink': isScrolled}">Vinkort</a>
+      </li>
+      <li class="nav-item">
+        <a
+          [routerLink]='["/drinks"]'
+          routerLinkActive="active"
+          class="nav-link"
+          [ngClass]="{'scrolledLink': isScrolled}">Drikkelse & Desserter</a>
+      </li>
+      <li class="nav-item">
+        <a
+          [routerLink]='["/kontakt"]'
+          routerLinkActive="active"
+          class="nav-link"
+          [ngClass]="{'scrolledLink': isScrolled}">Kontakt os</a>
+      </li>
+    </ul>
+  </div>
+</nav>

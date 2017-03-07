@@ -1,0 +1,63 @@
+<main>
+  <section class="container-fluid buffet-bg justify-content-center align-items-center d-flex">
+  </section>
+  <section class="container buffet-content">
+    <div class="d-flex justify-content-center align-items-center divider-title">
+      <div class="line-left"></div>
+      <h2 class="text-uppercase">Menukort</h2>
+      <div class="line-right"></div>
+    </div>
+    <div>
+      <h3>Spis alt hvad du kan</h3>
+      <div *ngFor="let buffet of buffets" class="d-flex justify-content-between large-screen-alignment">
+        <p>{{buffet.info}}</p>
+        <p>kr. {{buffet.price}},-</p>
+      </div>
+    </div>
+    <img class="buffet-vector-steak" src="./app/assets/images/buffet/beef-vector.png" alt="Steak image">
+    <div>
+      <h4>Forretter</h4>
+      <p class="font-italic">* Alle forretter er inkl. hjemmelavet brød</p>
+      <div *ngFor="let appetizer of appetizers" class="d-flex justify-content-between large-screen-alignment">
+        <p>{{appetizer.title}}</p>
+        <p class="appt-txt">{{appetizer.infoTxt}}</p>
+      </div>
+    </div>
+    <div>
+      <h4>Kød på grillen</h4>
+      <div class="d-flex justify-content-between flex-wrap large-screen-alignment">
+        <div *ngFor="let grill of grills" class="flex-items">
+          <p>{{grill.title}}</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h4>Varme retter</h4>
+      <div class="d-flex justify-content-between flex-wrap large-screen-alignment">
+        <div *ngFor="let dish of dishes" class="flex-items">
+          <p>{{dish.title}}</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h4>Sauce</h4>
+      <div class="d-flex justify-content-between flex-wrap large-screen-alignment">
+        <div *ngFor="let sauce of sauces" class="flex-items">
+          <p>{{sauce.title}}</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h4>Kartofler</h4>
+      <div class="d-flex justify-content-between flex-wrap large-screen-alignment">
+        <div *ngFor="let potato of potatoes" class="flex-items">
+          <p>{{potato.title}}</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h4>Kæmpe salatbuffet</h4>
+      <p class="text-center">Kæmpe salatbuffet med dressinger og forskellige olier</p>
+    </div>
+  </section>
+</main>

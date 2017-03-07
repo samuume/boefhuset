@@ -1,0 +1,96 @@
+/* Home Page */
+.landingSection {
+  color: #fff;
+  height: 80vh;
+  background-image: url('../images/home/beef.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.homePageMidImg {
+  height: 30vh;
+  background-image: url("../images/home/home-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: repeat;
+    height: 10px;
+    background-size: 20px 20px;
+    background-image: radial-gradient(circle at 10px -5px, transparent 12px, #FCCE68 13px);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: repeat;
+    height: 15px;
+    background-size: 40px 20px;
+    background-image:
+      radial-gradient(circle at 10px 15px, #FCCE68 12px, transparent 13px);
+  }
+}
+.info-content {
+  margin-bottom: 4rem;
+
+  .info-txt {
+    padding: 0 2rem;
+    h4 {
+      margin-bottom: 2rem;
+    }
+  }
+  .info-card {
+    width: 450px;
+    padding: 5rem 1rem;
+    background-color: $primary-color;
+    border-radius: 5px;
+    line-height: 1rem;
+    z-index: 1;
+    position: relative;
+    top: -2rem;
+    color: #fff;
+
+    address {
+      padding: 0 1rem;
+      margin-bottom: 1rem;
+      h4 {
+        line-height: 4rem;
+      }
+      button {
+        padding: 1rem;
+        margin-top: 2rem;
+        background: transparent;
+        display: block;
+        width: 100%;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        border-left: none;
+        border-right: none;
+        color: #fff;
+      }
+    }
+  }
+}
+
+/* Home - Responsive */
+@media (min-width: 768px) {
+  .divider-title {
+    h4 {
+      font-size: 2rem;
+      margin: 0 20px;
+    }
+  }
+  .line-left,
+  .line-right {
+    width: 200px;
+    height: 80px;
+  }
+}

@@ -1,0 +1,31 @@
+/*
+stylesheets/
+
+--modules/
+  --all.scss           #include to get all modules
+  --ultility.scss      #module name
+
+--partials/
+  -- _base.scss        #imports for all mixins + global project variables
+  -- _typography.scss  #typography
+  -- _reset.scss       #reset
+  -- _buttons.scss     #buttons
+
+--main.scss            #sass file that imports all modules and partials
+*/
+// Modules and Variables
+@import "partials/base";
+
+// Partials
+@import "partials/reset";
+@import "partials/typography";
+@import "partials/buttons";
+@import "partials/header";
+@import "partials/footer";
+@import "partials/home";
+@import "partials/buffet";
+@import "partials/vinkort";
+@import "partials/drinks";
+@import "partials/_contact";
+
+// Third-party

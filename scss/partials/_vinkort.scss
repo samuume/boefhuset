@@ -1,0 +1,50 @@
+/* Vinkort */
+.vinkort-bg {
+  height: 32vh;
+  background-image: url("../images/vinkort/vinkort-banner2.jpg");
+  background-size: cover;
+  background-position: top center;
+}
+.grapes {
+  width: 60%;
+  margin: 2rem auto;
+  display: block;
+}
+.vinkort-content {
+  h3 {
+    color: $primary-color;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .tips-txt {
+    text-align: center;
+  }
+  .vin-sub-content {
+    margin-top: 4rem;
+  }
+
+  .vinboks {
+    .vincard {
+      margin-top: 3rem;
+    }
+    .underline {
+      margin-top: 3rem;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .grapes {
+    width: 250px;
+  }
+  .vinboks {
+    .vincard {
+      &:nth-child(1),
+      &:nth-child(3),
+      &:nth-child(5),
+      &:nth-child(7){
+        padding-right: 2rem;
+      }
+    }
+  }
+}

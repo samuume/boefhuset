@@ -1,0 +1,74 @@
+/* Header */
+/* Header - logo */
+.logo {
+  height: 50px;
+  width: 170px;
+  background-image: url("../images/header/boefhuset-logo-white.svg");
+  background-size: cover;
+  background-position: center center;
+}
+.colored-logo {
+  height: 50px;
+  width: 170px;
+  background-image: url("../images/header/boefhuset-logo-colored.svg") !important;
+  background-size: cover;
+  background-position: center center;
+}
+/* Header - nav */
+.navbar {
+  padding: 0 !important;
+}
+.page-scroll-header {
+  background-color: white !important;
+  opacity: 0.9;
+}
+nav {
+  transition: background-color 1s ease-out;
+  ul {
+    li {
+      a {
+        color: #fff !important;
+      }
+    }
+  }
+}
+.scrolledLink {
+  color: #2a2d34 !important;
+}
+.navbar-toggler {
+  margin: 10px 0 0 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 99;
+  &:focus {
+    outline: none;
+  }
+}
+.collapse.show {
+  background-color: rgba(255, 255, 255, 1);
+  padding: 20px;
+  height: 280px;
+  a {
+    color: #2a2d34 !important;
+  }
+}
+/* Header - Responsive */
+@media (min-width: 768px) {
+  .navbar {
+    background-color: transparent;
+  }
+  .navbar-nav {
+    .nav-item {
+      margin-right: 2rem;
+      &:hover {
+        background-color: $primary-color !important;
+        transition: background-color 0.5s ease-in;
+        border-radius: 10px;
+      }
+      a {
+        &:hover {
+          color: #fff !important;
+        }
+      }
+    }
+  }
+}

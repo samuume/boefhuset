@@ -1,0 +1,378 @@
+/*
+stylesheets/
+
+--modules/
+  --all.scss           #include to get all modules
+  --ultility.scss      #module name
+
+--partials/
+  -- _base.scss        #imports for all mixins + global project variables
+  -- _typography.scss  #typography
+  -- _reset.scss       #reset
+  -- _buttons.scss     #buttons
+
+--main.scss            #sass file that imports all modules and partials
+*/
+/* Global Styling */
+/* Colors */
+/* Font styles */
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,600,700");
+body {
+  font-family: "Nunito", sans-serif !important;
+  /* Background Corn silk color */
+  background-color: #FFF8DC; }
+
+/* headlines */
+h1 {
+  font-size: font-size;
+  color: #fff;
+  border-bottom: 1px solid white;
+  padding-bottom: 1rem; }
+
+main {
+  position: relative;
+  top: -5rem; }
+
+.mobil-main {
+  top: 0 !important; }
+
+/* Content */
+.divider-title {
+  margin-top: 6rem; }
+  .divider-title h4 {
+    color: #da2d2d;
+    margin: 0 10px;
+    text-align: center; }
+
+.line-left {
+  background-image: url("../images/shared/text-deco-left.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 30px; }
+
+.line-right {
+  background-image: url("../images/shared/text-deco-right.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 40px; }
+
+.sub-text {
+  margin-top: 2rem; }
+
+/* Vinkort og Drikkelse Pages */
+.underline {
+  border-bottom: 1px grey solid; }
+
+/* Reset */
+a:focus {
+  outline: none; }
+
+/* Fonts */
+/* Header */
+/* Header - logo */
+.logo {
+  height: 50px;
+  width: 170px;
+  background-image: url("../images/header/boefhuset-logo-white.svg");
+  background-size: cover;
+  background-position: center center; }
+
+.colored-logo {
+  height: 50px;
+  width: 170px;
+  background-image: url("../images/header/boefhuset-logo-colored.svg") !important;
+  background-size: cover;
+  background-position: center center; }
+
+/* Header - nav */
+.navbar {
+  padding: 0 !important; }
+
+.page-scroll-header {
+  background-color: white !important;
+  opacity: 0.9; }
+
+nav {
+  transition: background-color 1s ease-out; }
+  nav ul li a {
+    color: #fff !important; }
+
+.scrolledLink {
+  color: #2a2d34 !important; }
+
+.navbar-toggler {
+  margin: 10px 0 0 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 99; }
+  .navbar-toggler:focus {
+    outline: none; }
+
+.collapse.show {
+  background-color: white;
+  padding: 20px;
+  height: 280px; }
+  .collapse.show a {
+    color: #2a2d34 !important; }
+
+/* Header - Responsive */
+@media (min-width: 768px) {
+  .navbar {
+    background-color: transparent; }
+  .navbar-nav .nav-item {
+    margin-right: 2rem; }
+    .navbar-nav .nav-item:hover {
+      background-color: #da2d2d !important;
+      transition: background-color 0.5s ease-in;
+      border-radius: 10px; }
+    .navbar-nav .nav-item a:hover {
+      color: #fff !important; } }
+
+/* Footer */
+footer {
+  margin-top: 2rem;
+  background-color: #2a2d34;
+  padding: 5rem 0; }
+  footer address {
+    width: 70%;
+    color: #fff !important; }
+    footer address h4 {
+      margin-bottom: 2rem; }
+  footer .footer-mid,
+  footer .footer-last {
+    margin-top: 2rem; }
+
+.footer-stk-logo {
+  width: 180px;
+  height: auto;
+  margin-bottom: 1rem; }
+
+.footer-fb-logo {
+  width: 150px; }
+
+.img-link {
+  width: 180px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  text-align: center; }
+  .img-link:hover {
+    background-color: #fafafa;
+    transition: background-color ease-in 1s; }
+
+abbr[title] {
+  text-decoration: none !important; }
+
+/* Footer - Responsive */
+@media (min-width: 768px) {
+  .footer-mid,
+  .footer-last {
+    margin-top: 0 !important; } }
+
+/* Home Page */
+.landingSection {
+  color: #fff;
+  height: 80vh;
+  background-image: url("../images/home/beef.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.homePageMidImg {
+  height: 30vh;
+  background-image: url("../images/home/home-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative; }
+  .homePageMidImg::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: repeat;
+    height: 10px;
+    background-size: 20px 20px;
+    background-image: radial-gradient(circle at 10px -5px, transparent 12px, #FCCE68 13px); }
+  .homePageMidImg::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: repeat;
+    height: 15px;
+    background-size: 40px 20px;
+    background-image: radial-gradient(circle at 10px 15px, #FCCE68 12px, transparent 13px); }
+
+.info-content {
+  margin-bottom: 4rem; }
+  .info-content .info-txt {
+    padding: 0 2rem; }
+    .info-content .info-txt h4 {
+      margin-bottom: 2rem; }
+  .info-content .info-card {
+    width: 450px;
+    padding: 5rem 1rem;
+    background-color: #da2d2d;
+    border-radius: 5px;
+    line-height: 1rem;
+    z-index: 1;
+    position: relative;
+    top: -2rem;
+    color: #fff; }
+    .info-content .info-card address {
+      padding: 0 1rem;
+      margin-bottom: 1rem; }
+      .info-content .info-card address h4 {
+        line-height: 4rem; }
+      .info-content .info-card address button {
+        padding: 1rem;
+        margin-top: 2rem;
+        background: transparent;
+        display: block;
+        width: 100%;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        border-left: none;
+        border-right: none;
+        color: #fff; }
+
+/* Home - Responsive */
+@media (min-width: 768px) {
+  .divider-title h4 {
+    font-size: 2rem;
+    margin: 0 20px; }
+  .line-left,
+  .line-right {
+    width: 200px;
+    height: 80px; } }
+
+/* Buffet */
+.buffet-bg {
+  height: 32vh;
+  background-image: url("../images/buffet/buffet-banner.jpg");
+  background-size: cover;
+  background-position: top center; }
+
+.buffet-content h3 {
+  color: #da2d2d;
+  text-align: center;
+  border-bottom: 1px solid grey;
+  padding-bottom: 0.3rem;
+  margin-top: 2rem; }
+
+.buffet-content h4 {
+  color: #da2d2d;
+  text-align: center;
+  margin: 2rem 0 1rem 0; }
+
+.buffet-content .appt-txt {
+  text-align: end; }
+
+.buffet-content .flex-items {
+  width: 50%; }
+  .buffet-content .flex-items:nth-child(2), .buffet-content .flex-items:nth-child(4), .buffet-content .flex-items:nth-child(6), .buffet-content .flex-items:nth-child(8) {
+    text-align: end; }
+
+.buffet-content .buffet-vector-steak {
+  width: 60%;
+  margin: 0 auto;
+  display: block; }
+
+@media (min-width: 768px) {
+  .buffet-content h3 {
+    width: 40%;
+    margin: 2rem auto; }
+  .buffet-content p {
+    font-size: 1.25rem;
+    font-weight: 300; }
+  .buffet-content .font-italic {
+    text-align: center; }
+  .buffet-content .large-screen-alignment {
+    width: 60%;
+    margin: 0 auto; }
+  .buffet-content .buffet-vector-steak {
+    width: 40%; } }
+
+/* Vinkort */
+.vinkort-bg {
+  height: 32vh;
+  background-image: url("../images/vinkort/vinkort-banner2.jpg");
+  background-size: cover;
+  background-position: top center; }
+
+.grapes {
+  width: 60%;
+  margin: 2rem auto;
+  display: block; }
+
+.vinkort-content h3 {
+  color: #da2d2d;
+  text-align: center;
+  margin-top: 2rem; }
+
+.vinkort-content .tips-txt {
+  text-align: center; }
+
+.vinkort-content .vin-sub-content {
+  margin-top: 4rem; }
+
+.vinkort-content .vinboks .vincard {
+  margin-top: 3rem; }
+
+.vinkort-content .vinboks .underline {
+  margin-top: 3rem; }
+
+@media (min-width: 768px) {
+  .grapes {
+    width: 250px; }
+  .vinboks .vincard:nth-child(1), .vinboks .vincard:nth-child(3), .vinboks .vincard:nth-child(5), .vinboks .vincard:nth-child(7) {
+    padding-right: 2rem; } }
+
+.drinks-bg {
+  height: 32vh;
+  background-image: url("../images/drinks/drinks-banner.jpg");
+  background-size: cover;
+  background-position: top center; }
+
+.drinks-img {
+  width: 60%;
+  margin: 2rem auto;
+  display: block; }
+
+.drinks-content h3 {
+  color: #da2d2d;
+  margin: 2rem 0; }
+
+.drinks-content h4 {
+  margin-bottom: 1rem; }
+
+.drinks-content .drinks-sub-content {
+  margin-top: 4rem; }
+
+.drinks-content .drinkboks {
+  margin-top: 4rem; }
+  .drinks-content .drinkboks .drinkcards {
+    margin-top: 2rem; }
+
+.drinks-content .drinks-alignment:nth-child(4), .drinks-content .drinks-alignment:nth-child(5), .drinks-content .drinks-alignment:nth-child(9) {
+  margin-top: 0; }
+
+.drinks-content .space-reset {
+  height: 0;
+  margin: 0; }
+
+@media (min-width: 768px) {
+  .drinks-img {
+    width: 250px; }
+  .drinkcards {
+    margin-top: 2rem; }
+    .drinkcards:nth-child(1), .drinkcards:nth-child(3), .drinkcards:nth-child(5), .drinkcards:nth-child(7), .drinkcards:nth-child(9) {
+      padding-right: 2rem; } }
+
+/* Kontakt Page */
+iframe {
+  width: 100%;
+  height: 50vh; }

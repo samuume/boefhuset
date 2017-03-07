@@ -1,0 +1,65 @@
+/* Global Styling */
+/* Colors */
+$primary-color: #da2d2d;
+$heading-color: #353535;
+$footer-bg-color: #2a2d34;
+
+/* Font styles */
+$bread-text-font: 'Nunito', sans-serif;
+
+body {
+  font-family: $bread-text-font !important;
+  /* Background Corn silk color */
+  background-color: #FFF8DC;
+}
+/* headlines */
+@mixin headline ($size, $color)
+{
+  font-size: $size;
+  color: $color;
+}
+h1 {
+  @include headline(font-size, #fff);
+  border-bottom: 1px solid white;
+  padding-bottom: 1rem;
+}
+main {
+  position: relative;
+  top: -5rem;
+}
+.mobil-main {
+  top: 0 !important;
+}
+
+/* Content */
+.divider-title {
+  margin-top: 6rem;
+  h4 {
+    color: $primary-color;
+    margin: 0 10px;
+    text-align: center;
+  }
+}
+.line-left {
+  background-image: url('../images/shared/text-deco-left.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 30px;
+}
+.line-right {
+  background-image: url('../images/shared/text-deco-right.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 40px;
+}
+.sub-text {
+  margin-top: 2rem;
+}
+/* Vinkort og Drikkelse Pages */
+.underline {
+  border-bottom: 1px grey solid;
+}
+
+

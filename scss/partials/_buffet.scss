@@ -1,0 +1,60 @@
+/* Buffet */
+.buffet-bg {
+  height: 32vh;
+  background-image: url("../images/buffet/buffet-banner.jpg");
+  background-size: cover;
+  background-position: top center;
+}
+.buffet-content {
+  h3 {
+    color: $primary-color;
+    text-align: center;
+    border-bottom: 1px solid grey;
+    padding-bottom: 0.3rem;
+    margin-top: 2rem;
+  }
+  h4 {
+    color: $primary-color;
+    text-align: center;
+    margin: 2rem 0 1rem 0;
+  }
+  .appt-txt {
+    text-align: end;
+  }
+  .flex-items {
+    width: 50%;
+      &:nth-child(2),
+      &:nth-child(4),
+      &:nth-child(6),
+      &:nth-child(8) {
+        text-align: end;
+      }
+  }
+  .buffet-vector-steak {
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  .buffet-content {
+    h3 {
+      width: 40%;
+      margin: 2rem auto;
+    }
+    p {
+      font-size: 1.25rem;
+      font-weight: 300;
+    }
+    .font-italic {
+      text-align: center;
+    }
+    .large-screen-alignment {
+      width: 60%;
+      margin: 0 auto;
+    }
+    .buffet-vector-steak {
+      width: 40%;
+    }
+  }
+}

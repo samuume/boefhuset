@@ -1,0 +1,49 @@
+/* Footer */
+footer {
+  margin-top: 2rem;
+  background-color: $footer-bg-color;
+  padding: 5rem 0;
+
+  address {
+    width: 70%;
+    color: #fff !important;
+    h4 {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .footer-mid,
+  .footer-last {
+    margin-top: 2rem;
+  }
+}
+.footer-stk-logo {
+  width: 180px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+.footer-fb-logo {
+  width: 150px;
+}
+.img-link {
+  width: 180px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  text-align: center;
+
+  &:hover {
+    background-color: rgba(250,250,250,1);
+    transition: background-color ease-in 1s;
+  }
+}
+abbr[title] {
+  text-decoration: none !important;
+}
+/* Footer - Responsive */
+@media (min-width: 768px) {
+  .footer-mid,
+  .footer-last {
+    margin-top: 0 !important;
+  }
+}

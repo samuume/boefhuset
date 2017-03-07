@@ -1,0 +1,74 @@
+<main>
+  <section class="container-fluid drinks-bg justify-content-center align-items-center d-flex">
+  </section>
+  <section class="container drinks-content">
+    <div class="d-flex justify-content-center align-items-center divider-title">
+      <div class="line-left"></div>
+      <h2 class="text-uppercase text-center">Drikkevarer & Desserter</h2>
+      <div class="line-right"></div>
+    </div>
+    <img src="./app/assets/images/drinks/coffee2.png" class="drinks-img" alt="Coffee image">
+    <div class="drinks-sub-content">
+      <h3 class="text-center">Kold drikkelse</h3>
+      <div class="d-flex flex-wrap drinkboks">
+        <div *ngFor="let cold of colds" class="col-sm-12 col-md-6 col-lg-6 drinkcards drinks-alignment">
+          <h4>{{cold.title}}</h4>
+          <p>{{cold.info}}</p>
+          <p
+            class="d-flex justify-content-between font-weight-bold"
+            [ngClass]="{'underline': cold.smsize != '' && cold.smprice != '',
+              'space-reset': cold.smsize == '' && cold.smprice == ''}"><span>{{cold.smsize}}</span><span>{{cold.smprice}}</span></p>
+          <p
+            class="d-flex justify-content-between font-weight-bold underline"
+            [ngClass]="{'underline': cold.mdsize != '' && cold.mdprice != '',
+              'space-reset': cold.mdsize == '' && cold.mdprice == ''}"><span>{{cold.mdsize}}</span><span>{{cold.mdprice}}</span></p>
+          <p
+            class="d-flex justify-content-between font-weight-bold underline"
+            [ngClass]="{'underline': cold.lgsize != '' && cold.lgprice != '',
+              'space-reset': cold.lgsize == '' && cold.lgprice == ''}"><span>{{cold.lgsize}}</span><span>{{cold.lgprice}}</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="drinks-sub-content">
+      <h3 class="text-center">Varm drikkelse</h3>
+      <div class="d-flex flex-wrap drinkboks">
+        <div *ngFor="let hot of hots" class="col-sm-12 col-md-6 col-lg-6 drinkcards">
+          <h4>{{hot.title}}</h4>
+          <p>{{hot.info}}</p>
+          <p class="d-flex justify-content-between font-weight-bold underline"><span>Per Person</span><span>kr. {{hot.price}},-</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="drinks-sub-content">
+      <h3 class="text-center">Kaffe Drinks</h3>
+      <div class="d-flex flex-wrap drinkboks">
+        <div *ngFor="let coffee of coffees" class="col-sm-12 col-md-6 col-lg-6 drinkcards">
+          <h4>{{coffee.title}}</h4>
+          <p *ngFor="let info of coffee.infos">{{info}}</p>
+          <p class="d-flex justify-content-between font-weight-bold underline"><span>Per Person</span><span>kr. {{coffee.price}},-</span></p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3 class="text-center">Desserter</h3>
+      <div class="d-flex flex-wrap drinkboks">
+        <div *ngFor="let dessert of desserts" class="col-sm-12 col-md-6 col-lg-6 drinkcards">
+          <h4>{{dessert.title}}</h4>
+          <p>{{dessert.info}}</p>
+          <p class="d-flex justify-content-between font-weight-bold underline"><span>Per Person</span><span>kr. {{dessert.price}},-</span></p>
+        </div>
+      </div>
+    </div>
+    <img src="./app/assets/images/drinks/cocktail.png" class="drinks-img" alt="Cocktail image">
+    <div class="drinks-sub-content">
+      <h3 class="text-center">Cocktail</h3>
+      <div class="d-flex flex-wrap drinkboks">
+        <div *ngFor="let cocktail of cocktails" class="col-sm-12 col-md-6 col-lg-6 drinkcards">
+          <h4>{{cocktail.title}}</h4>
+          <p *ngFor="let info of cocktail.infos">{{info}}</p>
+          <p class="d-flex justify-content-between font-weight-bold underline"><span>Pr Glas</span><span>kr. {{cocktail.price}},-</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

@@ -1,0 +1,57 @@
+<main>
+  <section class="container-fluid vinkort-bg justify-content-center align-items-center d-flex">
+  </section>
+  <section class="container vinkort-content">
+    <div class="d-flex justify-content-center align-items-center divider-title">
+      <div class="line-left"></div>
+      <h2 class="text-uppercase">Vinkort</h2>
+      <div class="line-right"></div>
+    </div>
+    <img src="./app/assets/images/vinkort/grapes.png" class="grapes" alt="Grapes Image">
+    <div class="vin-sub-content">
+      <h3>Mousserende</h3>
+      <p class="font-italic tips-txt">Til at starte med</p>
+      <div class="d-flex flex-wrap vinboks">
+        <div *ngFor="let mousser of moussers" class="col-sm-12 col-md-6 col-lg-6 vincard">
+          <h5>{{mousser.name}}</h5>
+          <p class="font-italic font-weight-bold">{{mousser.country}}</p>
+          <p>{{mousser.description}}</p>
+          <p class="text-right font-weight-bold underline"><span>1/1 fl. kr. {{mousser.price}},-</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="vin-sub-content">
+      <h3>Hvidvin</h3>
+      <div class="d-flex flex-wrap vinboks justify-content-between">
+        <div *ngFor="let hvidvin of hvidvins" class="col-sm-12 col-md-6 col-lg-6 vincard">
+          <h5>{{hvidvin.name}}</h5>
+          <p class="font-italic font-weight-bold">{{hvidvin.country}}</p>
+          <p>{{hvidvin.description}}</p>
+          <p class="d-flex justify-content-between font-weight-bold underline"><span>{{hvidvin.glas}}</span> <span>1/1 fl. kr. {{hvidvin.price}},-</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="vin-sub-content">
+      <h3>Rosévin</h3>
+      <div class="d-flex flex-wrap vinboks">
+        <div *ngFor="let rose of roses" class="col-sm-12 col-md-6 col-lg-6 vincard">
+          <h5>{{rose.name}}</h5>
+          <p class="font-italic font-weight-bold">{{rose.country}}</p>
+          <p>{{rose.description}}</p>
+          <p class="d-flex justify-content-between font-weight-bold underline"><span>{{rose.glas}}</span> <span>1/1 fl. kr. {{rose.price}},-</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="vin-sub-content">
+      <h3>Rødvin</h3>
+      <div class="d-flex flex-wrap vinboks">
+        <div *ngFor="let roedvin of roedvins" class="col-sm-12 col-md-6 col-lg-6 vincard">
+          <h5>{{roedvin.name}}</h5>
+          <p class="font-italic font-weight-bold">{{roedvin.country}}</p>
+          <p>{{roedvin.description}}</p>
+          <p class="d-flex justify-content-between font-weight-bold underline"><span>{{roedvin.glas}}</span> <span>1/1 fl. kr. {{roedvin.price}},-</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
