@@ -35,7 +35,7 @@
         <div *ngFor="let hot of hots" class="col-sm-12 col-md-6 col-lg-6 drinkcards">
           <h4>{{hot.title}}</h4>
           <p>{{hot.info}}</p>
-          <p class="d-flex justify-content-between font-weight-bold underline"><span>Per Person</span><span>kr. {{hot.price}},-</span></p>
+          <p class="d-flex justify-content-between font-weight-bold underline"><span>Pr Kop</span><span>kr. {{hot.price}},-</span></p>
         </div>
       </div>
     </div>
@@ -45,7 +45,7 @@
         <div *ngFor="let coffee of coffees" class="col-sm-12 col-md-6 col-lg-6 drinkcards">
           <h4>{{coffee.title}}</h4>
           <p *ngFor="let info of coffee.infos">{{info}}</p>
-          <p class="d-flex justify-content-between font-weight-bold underline"><span>Per Person</span><span>kr. {{coffee.price}},-</span></p>
+          <p class="d-flex justify-content-between font-weight-bold underline"><span>Pr Glas</span><span>kr. {{coffee.price}},-</span></p>
         </div>
       </div>
     </div>
@@ -55,7 +55,7 @@
         <div *ngFor="let dessert of desserts" class="col-sm-12 col-md-6 col-lg-6 drinkcards">
           <h4>{{dessert.title}}</h4>
           <p>{{dessert.info}}</p>
-          <p class="d-flex justify-content-between font-weight-bold underline"><span>Per Person</span><span>kr. {{dessert.price}},-</span></p>
+          <p class="d-flex justify-content-between font-weight-bold underline"><span></span><span>kr. {{dessert.price}},-</span></p>
         </div>
       </div>
     </div>

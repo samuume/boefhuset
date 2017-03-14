@@ -31,8 +31,8 @@ export const APPTIZDATA:IAppetizers[] = [
     infoTxt: "Dagens suppe"
   },
   {
-    title: "Gravad laks / Røget Laks",
-    infoTxt: "Valg imellem Franskbrød og Rugbrød"
+    title: "Røget Laks",
+    infoTxt: "Brød"
   }
 ]
 
@@ -41,19 +41,16 @@ export const GRILLDATA:IGrill[] = [
     title: "Kalvefilet"
   },
   {
-    title: "Australsk oksekød"
+    title: "Himmerlands Entrecôte"
   },
   {
-    title: "Ribeye / Oksefilet"
+    title: "Argentinsk Ribeye / Oksefilet"
   },
   {
     title: "Lammekotelet"
   },
   {
     title: "Kængurusteak"
-  },
-  {
-    title: "Svinemørbrad"
   },
   {
     title: "Laksesteak"
@@ -68,7 +65,7 @@ export const DISHESDATA:IHotdishes[] = [
     title: "Stegt flæsk"
   },
   {
-    title: "Oksegryde"
+    title: "Elevers retter"
   },
   {
     title: "Spareribs"
@@ -77,16 +74,7 @@ export const DISHESDATA:IHotdishes[] = [
     title: "Wienerschnitzler"
   },
   {
-    title: "Kyllingesteak"
-  },
-  {
     title: "Tarteletter"
-  },
-  {
-    title: "Bløde løg"
-  },
-  {
-    title: "Løgringe"
   },
   {
     title: "Stegte grøntsager"

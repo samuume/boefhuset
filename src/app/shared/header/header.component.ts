@@ -27,7 +27,6 @@ export class HeaderComponent {
       this.isScrolled = false;
     }
   }
-
   changed: number;
   change(newValue: number) {
     if(this.changed === newValue) {
@@ -36,4 +35,5 @@ export class HeaderComponent {
       this.changed = newValue;
     }
   }
+
 }

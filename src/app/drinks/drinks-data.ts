@@ -51,7 +51,7 @@ export const COLDDATA:IColdDrinks[] = [
     smprice: "",
     mdsize: "",
     mdprice: "",
-    lgsize: "Pr Flask",
+    lgsize: "Pr Flaske",
     lgprice: "kr. 35,-"
   },
   {
@@ -128,11 +128,6 @@ export const HOTDRINKSDATA:IHotDrinks[] = [
     price: 35
   },
   {
-    title: "Varm Chokolade",
-    info: "Varm Chokolade Med Flødeskum",
-    price: 40
-  },
-  {
     title: "Cappuccino",
     info: "",
     price: 35
@@ -195,7 +190,7 @@ export const COFFEEDATA:ICoffee[] = [
 export const DESSERTDATA:IDessert[] = [
   {
     title: "Is Dessert",
-    info: "Med Flødeskum og Cremet Sovs",
+    info: "Tre kugler Is med Flødeskum og Hjemmelavet Chokoladesovs",
     price: 35
   },
   {
@@ -205,7 +200,7 @@ export const DESSERTDATA:IDessert[] = [
   },
   {
     title: "Bananasplit",
-    info: "",
+    info: "Med Hjemmelavet Chokoladesovs",
     price: 59
   }
 ]

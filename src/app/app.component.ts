@@ -1,4 +1,11 @@
-import { Component } from '@angular/core';
+import 'rxjs/add/operator/filter';
+import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/mergeMap';
+
+import { Component, OnInit, AfterViewInit} from '@angular/core';
+import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
+
+declare var jQuery: any;
 
 @Component({
   selector: 'my-app',
@@ -8,4 +15,18 @@ import { Component } from '@angular/core';
       <footer></footer>
   `,
 })
-export class AppComponent  { name = 'Angular'; }
+export class AppComponent implements AfterViewInit {
+  constructor(
+    private router: Router,
+    private activatedRoute: ActivatedRoute
+  ) {}
+
+  ngAfterViewInit() {
+    this.router.events
+      .filter(event => event instanceof NavigationEnd)
+      .subscribe((event) =>
+        jQuery('#navbarTogglerDemo02').collapse('hide')
+      );
+  }
+
+}
