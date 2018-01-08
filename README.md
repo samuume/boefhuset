@@ -2,4 +2,4 @@
 
 ## Bøfhuset Slagelse ( Restaurant closed )
 
-[Live Demo](https://boefhuset.tonychen.dk/)
+[Live Demo](http://boefhuset.tonychen.dk/)
